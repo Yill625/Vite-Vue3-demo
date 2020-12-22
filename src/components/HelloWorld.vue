@@ -16,6 +16,8 @@ export default {
     msg: String,
   },
   setup() {
+    const test = {}
+    console.log(test?.test ?? 2)
     const count = ref(0)
     const plusOne = computed(() => count.value + "test")
     return { count, plusOne }
