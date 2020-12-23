@@ -4,4 +4,6 @@
 
 ## 学习资料
 
-[Composition API + 深度解读（视频）](https://www.bilibili.com/video/BV1my4y1m7sz)
+### 视频
+
+[Composition API + 深度解读](https://www.bilibili.com/video/BV1my4y1m7sz)
