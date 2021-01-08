@@ -10,9 +10,9 @@
 </template>
 
 <script>
-import { ref, computed } from "vue"
+import { ref, computed } from "vue";
 
-import useLocalStorage from "../use/useLocalStorage"
+import useLocalStorage from "../use/useLocalStorage";
 
 export default {
   name: "HelloWorld",
@@ -20,19 +20,19 @@ export default {
     msg: String,
   },
   setup() {
-    const { storageData, setStorage } = useLocalStorage()
+    const { storageData, setStorage } = useLocalStorage();
 
-    const count = ref(0)
+    const count = ref(0);
 
     const addCount = () => {
-      count.value++
-      setStorage("count", count.value)
-      console.log(storageData)
-    }
+      count.value++;
+      setStorage("count", count.value);
+      console.log(storageData);
+    };
 
-    const plusOne = computed(() => count.value + "test")
+    const plusOne = computed(() => count.value + "test");
 
-    return { count, plusOne, addCount, storageData }
+    return { count, plusOne, addCount, storageData };
   },
-}
+};
 </script>

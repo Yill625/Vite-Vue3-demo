@@ -7,19 +7,19 @@
 </template>
 
 <script>
-import { reactive, ref } from 'vue'
-import HelloWorld from './components/HelloWorld.vue'
-import useLocalStorage from './use/useLocalStorage'
+import { reactive, ref } from "vue";
+import HelloWorld from "./components/HelloWorld.vue";
+import useLocalStorage from "./use/useLocalStorage";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     HelloWorld,
   },
   setup() {
-    const { getStorage, setStorage, storageData } = useLocalStorage()
-    const test = reactive(storageData)
-    return { test }
+    const { getStorage, setStorage, storageData } = useLocalStorage();
+    const test = reactive(storageData);
+    return { test };
   },
-}
+};
 </script>
