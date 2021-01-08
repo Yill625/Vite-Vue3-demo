@@ -6,7 +6,7 @@ function pathResolve(dir: string) {
 
 module.exports = {
   alias: {
-    "/@/": pathResolve("src"),
+    "@/": pathResolve("src"),
   },
   optimizeDeps: {
     include: ["@ant-design/icons-vue"],
